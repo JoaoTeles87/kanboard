@@ -31,8 +31,8 @@
         <?= $this->hook->asset('css', 'template:layout:css') ?>
         <?= $this->hook->asset('js', 'template:layout:js') ?>
 
-        <link rel="icon" href="<?= $this->url->dir() ?>assets/img/adaptive-favicon.svg" type="image/svg+xml">
-        <link rel="icon" type="image/png" href="<?= $this->url->dir() ?>assets/img/favicon.png">
+        <link rel="icon" href="<?= $this->url->dir() ?>assets/img/favicon.jpg" type="image/jpg">
+        <link rel="icon" type="image/jpg" href="<?= $this->url->dir() ?>assets/img/favicon.jpg">
         <link rel="apple-touch-icon" href="<?= $this->url->dir() ?>assets/img/touch-icon-iphone.png">
         <link rel="apple-touch-icon" sizes="72x72" href="<?= $this->url->dir() ?>assets/img/touch-icon-ipad.png">
         <link rel="apple-touch-icon" sizes="114x114" href="<?= $this->url->dir() ?>assets/img/touch-icon-iphone-retina.png">
@@ -44,7 +44,7 @@
             <?php elseif (isset($title)): ?>
                 <?= $this->text->e($title) ?>
             <?php else: ?>
-                Kanboard
+                RHP Kanboard
             <?php endif ?>
         </title>
 

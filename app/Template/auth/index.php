@@ -1,4 +1,5 @@
 <div class="form-login">
+    <h2 class="login-title">Bem-vindo ao RHP Kanboard</h2>
 
     <?= $this->hook->render('template:auth:login-form:before') ?>
 
