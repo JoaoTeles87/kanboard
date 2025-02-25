@@ -1,6 +1,24 @@
+<style>
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .logo-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid #609555;
+            object-fit: cover;
+        }
+    </style>
+    
 <div class="form-login">
     <h2 class="login-title">Bem-vindo ao RHP Kanboard</h2>
-
+    <div class="logo-container">
+    <img src="assets/img/favicon.jpg" alt="Logo do Hospital" class="logo-circle">
+    </div>
     <?= $this->hook->render('template:auth:login-form:before') ?>
 
     <?php if (isset($errors['login'])): ?>
@@ -9,7 +27,7 @@
 
     <?php if (! HIDE_LOGIN_FORM): ?>
     <form method="post" action="<?= $this->url->href('AuthController', 'check') ?>">
-
+    
         <?= $this->form->csrf() ?>
 
         <?= $this->form->label(t('Username'), 'username') ?>
